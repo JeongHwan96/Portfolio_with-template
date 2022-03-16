@@ -53,8 +53,23 @@
                                             class="caret"></b></span>
                                 </a>
                                 <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                    <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Profile</a></li>
+                                    <li><a class="dropdown-item" id="root" href="contacts.html">Contacts</a></li>
+                                   
+                                    
+                                    <div id="modal">
+                                       
+                                        <div class="modal_content">
+                                            <h2>모달 창</h2>
+                                           
+                                            <p>모달 창 입니다.</p>
+                                           
+                                            <button type="button" id="modal_close_btn">모달 창 닫기</button>
+                                           
+                                        </div>
+                                       
+                                        <div class="modal_layer"></div>
+                                    </div>
                                     <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
 
 
@@ -65,7 +80,7 @@
                             </div>
                         </li>
                         <li class="">
-                            <a href="mainPage.html" aria-expanded="false"><i class="fa fa-home"></i></i>Main</a>
+                            <a href="index.html" aria-expanded="false"><i class="fa fa-home"></i></i>Main</a>
 
                         </li>
                         <li>
@@ -203,8 +218,8 @@
                                         <li>항상 배우고 공부함으로써 어제보다 더 성장된 개발자가 되겠습니다.<br></li>
                                     </ul>
                                 </div>
-
-                                <!-- <div class="skill">
+<!-- 
+                                <div class="skill">
                                     <div class="txtSKILL">SKILL</div>
                                     <img src="images/html.png" class="html" alt="">
                                     <img src="images/css.png" class="css" alt="">
@@ -247,6 +262,15 @@
                     <script src="../js/script.js"></script>
 
 
+                    <script>
+                        document.getElementById("modal_opne_btn").onclick = function() {
+                            document.getElementById("modal").style.display="block";
+                        }
+                       
+                        document.getElementById("modal_close_btn").onclick = function() {
+                            document.getElementById("modal").style.display="none";
+                        }   
+                    </script>
 
 </body>
 
