@@ -1,0 +1,14 @@
+.popup {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 50px;
+    width: 80%;
+    display: none;
+    z-index:1 ;
+}
+
+.popup .close {
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+}

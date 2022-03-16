@@ -1,0 +1,1451 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Advanced Form Elements</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <link href="css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
+
+    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
+
+    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
+
+    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
+
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
+
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+
+    <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+    <link href="css/plugins/select2/select2-bootstrap4.min.css" rel="stylesheet">
+
+    <link href="css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+
+    <link href="css/plugins/dualListbox/bootstrap-duallistbox.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../page/css/main.css">
+    <link rel="stylesheet" href="../page/modal/modal.css">
+    <link rel="stylesheet" href="../page/modal/modal.js">
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+</head>
+
+<body class=" pace-done">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99"
+            style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" class="rounded-circle" src="../images/kim.png">
+                            <span class="block m-t-xs font-bold text-light">Kim Jeong Hwan</span>
+
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                                <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span>
+                            <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                            <li><a href="index.html">Dashboard v.1</a></li>
+                            <li><a href="dashboard_2.html">Dashboard v.2</a></li>
+                            <li><a href="dashboard_3.html">Dashboard v.3</a></li>
+                            <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                            <li><a href="dashboard_5.html">Dashboard v.5 </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span
+                                class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                            <li><a href="graph_flot.html">Flot Charts</a></li>
+                            <li><a href="graph_morris.html">Morris.js Charts</a></li>
+                            <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
+                            <li><a href="graph_chartjs.html">Chart.js</a></li>
+                            <li><a href="graph_chartist.html">Chartist</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox
+                            </span><span class="label label-warning float-right">16/24</span></a>
+                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                            <li><a href="mailbox.html">Inbox</a></li>
+                            <li><a href="mail_detail.html">Email view</a></li>
+                            <li><a href="mail_compose.html">Compose email</a></li>
+                            <li><a href="email_template.html">Email templates</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
+                    </li>
+                    <li class="active">
+
+                </ul>
+                </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg animated fadeInRight">
+            <div class="row border-bottom">
+
+            </div>
+            <div class="row wrapper border-bottom gray-bg page-heading">
+                <div class="col-lg-10">
+
+
+                    <div class="main_container gray-bg">
+
+                        <div class="select">
+                           <!--Manager-->
+                           <h1 class=" font-weight-bold text-center">Manager</h1>
+                            <div class="Manager">
+                                <div class="select_portfolio">
+                                    <div class="Tuchel text-right">
+                                        <a class="" href="javascript:openModal('modal0');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal0">
+                                    <a href="#none" class="close text-right">X</a>
+                                 <table border="1" class="table v-middle table-bordered">
+                                     <thead>
+                                         <tr>
+                                             <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Thomas Tuchel<br><br></h1></th>
+                                         </tr>
+                                     </thead>
+                                     <tbody>
+                                        
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Number: 16</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Position: GoalKeeper</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Age: 29</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">BirthPlace: Senegal</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Height: 194cm</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Weight: 93Kg</td>
+                                         </tr>
+
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Appearance: 20</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Clean Sheets: 8</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Save: 55</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Shots Saved: 77%</td>
+                                         </tr>
+                                    </tbody>
+                                     
+                                 </table>
+                                
+                                 </div>
+                            <!--goalkeeper -->
+                            <h1 class=" font-weight-bold text-center">GoalKeeper</h1>
+                            <div class="goalkeeper">
+                                <div class="select_portfolio">
+                                    <div class="mendy text-right">
+                                        <a class="" href="javascript:openModal('modal1');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal1">
+                                    <a href="#none" class="close text-right">X</a>
+                                 <table border="1" class="table v-middle table-bordered">
+                                     <thead>
+                                         <tr>
+                                             <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Edouard Mendy<br><br></h1></th>
+                                         </tr>
+                                     </thead>
+                                     <tbody>
+                                        
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Number: 16</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Position: GoalKeeper</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Age: 29</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">BirthPlace: Senegal</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Height: 194cm</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Weight: 93Kg</td>
+                                         </tr>
+
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Appearance: 20</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Clean Sheets: 8</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Save: 55</td>
+                                         </tr>
+                                         <tr>
+                                            <td class="font-weight-bold w-200">Shots Saved: 77%</td>
+                                         </tr>
+                                    </tbody>
+                                     
+                                 </table>
+                                
+                                 </div>
+
+                                <div class="select_portfolio">
+                                    <div class="kepa text-right">
+                                        <a class="" href="javascript:openModal('modal2');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal2">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Kepa Arrizabalaga<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 1</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: GoalKeeper</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 27</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Spain</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 186cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 89Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 4</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Clean Sheets: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Save: 11</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Shots Saved: 85%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+
+                                <div class="select_portfolio">
+                                    <div class="beti text-right">
+                                        <a class="" href="javascript:openModal('modal3');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal3">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Marcus Bettinelli<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 13</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: GoalKeeper</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 29</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: England</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 193cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 91.7Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Clean Sheets: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Save: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Shots Saved: 0%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                            </div>
+
+                            <!--defender-->
+                            <h1 class=" font-weight-bold">Defender</h1>
+                            <div class="defender">
+                                <div class="select_portfolio">
+                                    <div class="alonso text-right">
+                                        <a class="" href="javascript:openModal('modal4');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal4">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Marcos Alonso<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 3</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 31</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Spain</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 189cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 85Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 18</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 1</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 72%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="azpillicueta text-right">
+                                        <a class="" href="javascript:openModal('modal5');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal5">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Cesar Azpillicueta<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 28</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 32</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Spain</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 178cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 78Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 17</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 54%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="chaloba text-right">
+                                        <a class="" href="javascript:openModal('modal6');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal6">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Trevoh Chalobah<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 14</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 22</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: England</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 190cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 82Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 14</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 55%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="chilwell text-right">
+                                        <a class="" href="javascript:openModal('modal7');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal7">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Ben Chilwell<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 21</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 25</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: England</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 189cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 85Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 18</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 1</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 72%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="christensen text-right">
+                                        <a class="" href="javascript:openModal('modal8');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal8">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Andreas Christensen<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 4</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 25</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Denmark</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 188cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 83Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 13</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 67%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="james text-right">
+                                        <a class="" href="javascript:openModal('modal9');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal9">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Reece James<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 24</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 22</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: England</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 179cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 91Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 16</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 4</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 5</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 84%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="mallang text-right">
+                                        <a class="" href="javascript:openModal('modal10');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal10">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Malang Sarr<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 31</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 23</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: France</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 182cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 72Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 3</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 83%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="rudiger text-right">
+                                        <a class="" href="javascript:openModal('modal11');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal11">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Antonio Rudiger<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 28</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Germany</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 190cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 86Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 23</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 67%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="silva text-right">
+                                        <a class="" href="javascript:openModal('modal12');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal12">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Thiago Silva<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 6</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Defender</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 37</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Brazil</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 181cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Weight: 82Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 20</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 3</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 74%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                            </div>
+
+                            <!--midfielder-->
+                            <h1 class=" font-weight-bold">Midfielder</h1>
+                            <div class="midfielder">
+                                <div class="select_portfolio">
+                                    <div class="jorgi text-right">
+                                        <a class="" href="javascript:openModal('modal13');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal13">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Jorginho<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 5</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Midfielder</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 30</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Italy</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 180cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">weight: 68Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 20</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 6</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 1</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 89%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="kante text-right">
+                                        <a class="" href="javascript:openModal('modal14');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal14">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">N'Golo Kante<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 7</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Midfielder</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 30</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: France</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 168cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">weight: 72Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 15</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 85%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="kovacic text-right">
+                                        <a class="" href="javascript:openModal('modal15');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal15">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Mateo Kovacic<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 8</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Midfielder</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 27</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Austria</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 176cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">weight: 82Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 16</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 5</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 87%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="mount text-right">
+                                        <a class="" href="javascript:openModal('modal16');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal16">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Mason Mount<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 19</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Midfielder</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 23</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: England</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 180cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">weight: 74Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 21</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 7</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 6</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 84%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="barkley text-right">
+                                        <a class="" href="javascript:openModal('modal17');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal17">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Ross Barkley<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 18</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Midfielder</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 28</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: England</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 185cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">weight: 87Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 5</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 85%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="loftus text-right">
+                                        <a class="" href="javascript:openModal('modal18');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal18">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Ruben Loftus-Cheek<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 12</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Midfielder</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 26</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: England</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 191cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">weight: 90Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 12</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 2</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 88%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="saul text-right">
+                                        <a class="" href="javascript:openModal('modal19');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal19">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Saul Niguez<br><br></h1></th>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Number: 17</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Position: Midfielder</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Age: 27</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="font-weight-bold w-200">BirthPlace: Spain</td>
+                                             </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Height: 183cm</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">weight: 77.5Kg</td>
+                                            </tr>
+   
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Appearance: 6</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Goal: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Assists: 0</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="font-weight-bold w-200">Tackle Success: 86%</td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                 </div>
+                            </div>
+
+                            <!--forward-->
+                            <h1 class=" font-weight-bold">Forward</h1>
+                            <div class="forward">
+                                <div class="select_portfolio">
+                                    <div class="lukaku text-right">
+                                        <a class="" href="javascript:openModal('modal20');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal20">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                       <thead>
+                                           <tr>
+                                               <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Romelu Lukaku<br><br></h1></th>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Number: 9</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Position: Forward</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Age: 28</td>
+                                           </tr>
+                                           <tr>
+                                               <td class="font-weight-bold w-200">BirthPlace: Belgium</td>
+                                            </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Height: 191cm</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">weight: 103Kg</td>
+                                           </tr>
+  
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Appearance: 16</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Goal: 5</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Assists: 0</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Tackle Success: 58%</td>
+                                           </tr>
+                                       </thead>
+                                   </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="pulisic text-right">
+                                        <a class="" href="javascript:openModal('modal21');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal21">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                       <thead>
+                                           <tr>
+                                               <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Christian Pulisic<br><br></h1></th>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Number: 10</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Position: Forward</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Age: 23</td>
+                                           </tr>
+                                           <tr>
+                                               <td class="font-weight-bold w-200">BirthPlace: United States</td>
+                                            </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Height: 177cm</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">weight: 73Kg</td>
+                                           </tr>
+  
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Appearance: 12</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Goal: 3</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Assists: 0</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Tackle Success: 80%</td>
+                                           </tr>
+                                       </thead>
+                                   </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="havertz text-right">
+                                        <a class="" href="javascript:openModal('modal22');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal22">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                       <thead>
+                                           <tr>
+                                               <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Kai Havertz<br><br></h1></th>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Number: 29</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Position: Forward</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Age: 22</td>
+                                           </tr>
+                                           <tr>
+                                               <td class="font-weight-bold w-200">BirthPlace: Germany</td>
+                                            </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Height: 190cm</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">weight: 83Kg</td>
+                                           </tr>
+  
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Appearance: 16</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Goal: 2</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Assists: 1</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Tackle Success: 83%</td>
+                                           </tr>
+                                       </thead>
+                                   </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="werner text-right">
+                                        <a class="" href="javascript:openModal('modal23');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal23">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                       <thead>
+                                           <tr>
+                                               <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Timo Werner<br><br></h1></th>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Number: 11</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Position: Forward</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Age: 25</td>
+                                           </tr>
+                                           <tr>
+                                               <td class="font-weight-bold w-200">BirthPlace: Germany</td>
+                                            </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Height: 180cm</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">weight: 75Kg</td>
+                                           </tr>
+  
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Appearance: 11</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Goal: 1</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Assists: 1</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Tackle Success: 60%</td>
+                                           </tr>
+                                       </thead>
+                                   </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="ziyech text-right">
+                                        <a class="" href="javascript:openModal('modal24');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal24">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                       <thead>
+                                           <tr>
+                                               <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Hakim Ziyech<br><br></h1></th>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Number: 22</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Position: Forward</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Age: 28</td>
+                                           </tr>
+                                           <tr>
+                                               <td class="font-weight-bold w-200">BirthPlace: Belgium</td>
+                                            </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Height: 180cm</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">weight: 70Kg</td>
+                                           </tr>
+  
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Appearance: 13</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Goal: 3</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Assists: 2</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Tackle Success: 78%</td>
+                                           </tr>
+                                       </thead>
+                                   </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="odoi text-right">
+                                        <a class="" href="javascript:openModal('modal25');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal25">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                       <thead>
+                                           <tr>
+                                               <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Callum Hudson-Odoi<br><br></h1></th>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Number: 20</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Position: Forward</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Age: 21</td>
+                                           </tr>
+                                           <tr>
+                                               <td class="font-weight-bold w-200">BirthPlace: England</td>
+                                            </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Height: 178cm</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">weight: 78Kg</td>
+                                           </tr>
+  
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Appearance: 15</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Goal: 1</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Assists: 2</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Tackle Success: 58%</td>
+                                           </tr>
+                                       </thead>
+                                   </table>
+                                 </div>
+                                <div class="select_portfolio">
+                                    <div class="kenedy text-right">
+                                        <a class="" href="javascript:openModal('modal26');">show detail</a>
+                                    </div>
+                                </div>
+                                <div class="popup modal26">
+                                    <a href="#none" class="close">X</a>
+                                    <table border="1" class="table v-middle table-bordered">
+                                       <thead>
+                                           <tr>
+                                               <th class="font-weight-bold w-300 text-center"><h1 style="font-size: 20px !important;">Kenedy<br><br></h1></th>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Number: </td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Position: Forward</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Age: 25</td>
+                                           </tr>
+                                           <tr>
+                                               <td class="font-weight-bold w-200">BirthPlace: Brazil</td>
+                                            </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Height: 182cm</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">weight: 84Kg</td>
+                                           </tr>
+  
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Appearance: 0</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Goal: 0</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Assists: 0</td>
+                                           </tr>
+                                           <tr>
+                                              <td class="font-weight-bold w-200">Tackle Success: 0%</td>
+                                           </tr>
+                                       </thead>
+                                   </table>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    </ol>
+                </div>
+            </div>
+
+            <script>
+                    //팝업 열기
+    function openModal(modalname) {
+        document.get
+        $("." + modalname).fadeIn(300);
+    }
+
+// 팝업 닫기
+$('.popup .close').click(function() {
+        $(this).parent().fadeOut(300);
+    });
+
+            </script>

@@ -1,0 +1,83 @@
+body {
+  
+}
+.main_container {
+        position: relative;
+        padding: 100px 240px;
+    .select,.goalkeeper,.defender,.midfielder,.forward {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        .select_portfolio {
+            width: 164px;
+            height: 148px;
+            margin: 4px;
+            overflow: hidden;
+            
+            background-color: #555;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            transform: skewX(-14deg);
+            transition: 
+                transform .1s,
+                background-color .6s;
+            .mendy,.kepa,.beti,.alonso,.azpillicueta,.chaloba,.chilwell,.christensen,.james,.mallang,.rudiger,.silva,.jorgi,.kante,.kovacic,.mount,.barkley,.loftus,.saul,.kenedy,.odoi,.ziyech,.werner,.havertz,.pulisic,.lukaku,.Tuchel {
+                width: 117%;
+                height: 110%;
+                background-position: center;
+                background-size: 140px;
+                background-repeat: no-repeat;
+                transform: skewX(14deg) translateX(-16px);
+            }
+        }
+        .select_portfolio:hover {
+            background-color: BLUE;
+            transform: scale(1.3) skewX(-14deg);
+            z-index:1;
+        }
+        /*Manager*/
+
+        /*goalkeeper*/
+        .select_portfolio .mendy {background-image: url("../chel/goalkeeper/mendy.png");}
+        .select_portfolio .kepa {background-image: url("../chel/goalkeeper/kepa.png");}
+        .select_portfolio .beti {background-image: url("../chel/goalkeeper/beti.png");}
+       
+
+        /*defender*/
+        .select_portfolio .alonso {background-image: url("../chel/defender/alonso.png");}
+        .select_portfolio .azpillicueta {background-image: url("../chel/defender/azpillicueta.png");}
+        .select_portfolio .chaloba {background-image: url("../chel/defender/chaloba.png");}
+        .select_portfolio .chilwell {background-image: url("../chel/defender/chilwell.png");}
+        .select_portfolio .christensen {background-image: url("../chel/defender/christensen.png");}
+        .select_portfolio .james {background-image: url("../chel/defender/james.png");}
+        .select_portfolio .mallang {background-image: url("../chel/defender/mallang.png");}
+        .select_portfolio .rudiger {background-image: url("../chel/defender/rudiger.png");}
+        .select_portfolio .silva {background-image: url("../chel/defender/silva.png");}
+
+        /*midfielder*/
+        .select_portfolio .jorgi {background-image: url("../chel/mid/jorgi.png");}
+        .select_portfolio .kante {background-image: url("../chel/mid/kante.png");}
+        .select_portfolio .kovacic {background-image: url("../chel/mid/kovacic.png");}
+        .select_portfolio .mount {background-image: url("../chel/mid/mount.png");}
+        .select_portfolio .barkley {background-image: url("../chel/mid/barkley.png");}
+        .select_portfolio .loftus {background-image: url("../chel/mid/loftus.png");}
+        .select_portfolio .saul {background-image: url("../chel/mid/saul.png");}
+        
+        /*forward*/
+        .select_portfolio .lukaku {background-image: url("../chel/forward/lukaku.png");}
+        .select_portfolio .pulisic {background-image: url("../chel/forward/pulisic.png");}
+        .select_portfolio .havertz {background-image: url("../chel/forward/havertz.png");}
+        .select_portfolio .werner {background-image: url("../chel/forward/werner.png");}
+        .select_portfolio .ziyech {background-image: url("../chel/forward/ziyech.png");}
+        .select_portfolio .odoi {background-image: url("../chel/forward/odoi.png");}
+        .select_portfolio .kenedy {background-image: url("../chel/forward/kenedy.png");}    
+    }
+
+    /*infomation*/
+    
+    
+}
