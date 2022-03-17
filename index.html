@@ -1,0 +1,277 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JeongHwan | Main Page</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../page/img/favicon/favicon.svg">
+
+    <script src="https://kit.fontawesome.com/d7f585e09e.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body class="canvas-menu mini-navbar  pace-done">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99"
+            style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99"
+            style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+                <div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
+
+                    <ul class="nav metismenu" id="side-menu">
+                        <li class="nav-header">
+                            <div class="dropdown profile-element">
+                                <img alt="image" class="rounded-circle" src="../images/kim.png">
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                    <span class="block m-t-xs font-bold text-light">Kim Jeong Hwan</span>
+                                    <span class="text-muted text-xs block">FrontEnd Developer <b
+                                            class="caret"></b></span>
+                                </a>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                    <li><a class="dropdown-item" href="index.html">Profile</a></li>
+                                    <li><a class="dropdown-item" id="root" href="contacts.html">Contacts</a></li>
+                                   
+                                    
+                                    <div id="modal">
+                                       
+                                        <div class="modal_content">
+                                            <h2>모달 창</h2>
+                                           
+                                            <p>모달 창 입니다.</p>
+                                           
+                                            <button type="button" id="modal_close_btn">모달 창 닫기</button>
+                                           
+                                        </div>
+                                       
+                                        <div class="modal_layer"></div>
+                                    </div>
+                                    <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="logo-element">
+                                IN+
+                            </div>
+                        </li>
+                        <li class="">
+                            <a href="index.html" aria-expanded="false"><i class="fa fa-home"></i></i>Main</a>
+
+                        </li>
+                        <li>
+                            <a href="layouts.html" aria-expanded="false"><i class="fa fa-diamond"></i> <span
+                                    class="fa arrow"></span>Portfolio</a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="./page/react.html">React를 사용하여 쇼핑몰 만들어보기(진행중)</a></li>
+                                <li><a href="./page/FirstPortfolioPage.html">첫 번째 포트폴리오 사이트</a></li>
+                                <li><a href="./page/SecondPortfolioPage.html">두 번째 포트폴리오 사이트</a></li>
+                                <li><a href="./page/starbucksPortfolioPage.html">스타벅스 메인페이지 제작 연습</a></li>
+                                <li><a href="./page/dongtan.html">동탄 서울베스트 치과 팝업 제작</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://github.com/JeongHwan96" aria-expanded="true"><i class="fa fa-github"></i>
+                                <span class="nav-label">GitHub</span></a>
+
+                        </li>
+                        <li>
+                            <a href="https://blog.naver.com/kosy17" aria-expanded="false"><i class="fa  fa-blog"></i>
+                                <span class="nav-label">Blog </span></a>
+
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+                <div class="slimScrollBar"
+                    style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 504.29px;">
+                </div>
+                <div class="slimScrollRail"
+                    style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.9; z-index: 90; right: 1px;">
+                </div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+
+            <div class="row wrapper border-bottom white-bg page-heading">
+
+                <h1 class="typingContents"></h1>
+
+            </div>
+
+            <div class="wrapper wrapper-content  animated fadeInRight article">
+                <div class="row justify-content-md-center" style="margin-right: -12%;">
+                    <div class="col-lg-10">
+                        <div class="ibox">
+                            <div class="ibox-content">
+                                <div class="float-right">
+                                    <button class="btn btn-white btn-xs" type="button">FrontEnd Developer</button>
+                                    <button class="btn btn-white btn-xs" type="button">Web Publisher</button>
+
+                                </div>
+
+                                <p>
+                                    <div class="Introduce">
+                                        <h1 class="aboutMe">About Me</h1>
+                                        <ul class="profile">
+                                            <div id="AboutMe"></div>
+                                            <li class="name">NAME: <span>김정환</span> </li>
+
+                                            <li class="birth">BIRTH: <span>1996.03.12</span> </li>
+                                            </li>
+                                            <li class="blog">BLOG: <span><a
+                                                        href="https://blog.naver.com/kosy17">https://blog.naver.com/kosy17</a></span>
+                                            </li>
+                                            </li>
+                                            <li class="e-mail">E-MAIL: <span>kosy17@naver.com</span> </li>
+                                            </li>
+                                        </ul>
+                                        <table class="ETCprofileDetail">
+                                            <tbody class="mainTable">
+                                                <tr>
+                                                    <th rowspan="3">EDUCATION</th>
+                                                    <td class="date">2021.02 ~ 2021.07</td>
+                                                    <td class="Eduname">TIS정보기술교육센터- FrontEnd, BackEnd 개발자 양성과정</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="date">2017.03 ~ 2019.02</td>
+                                                    <td class="Eduname">평택대학교 산업IOT융복합 전공(복수전공)</td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td class="date">2015.03 ~ 2019.02</td>
+                                                    <td class="Eduname">평택대학교 정보통신학과 졸업</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody class="mainTable2">
+                                                <tr>
+                                                    <th rowspan="3">JOB</th>
+                                                    <td class="date">2018.11 ~ 2020.09</td>
+                                                    <td class="Eduname">와이즈스톤- LG SmartTV Software QA검증</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="date">2020.09 ~ 2020.11</td>
+                                                    <td class="Eduname">투게더솔루션- 삼성생명 Site 리뉴얼</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="date">2021.11 ~ 2022.01</td>
+                                                    <td class="Eduname">덴탈비서(인턴) - 랜딩페이지 관리 및 팝업창 관리</td>
+                                                </tr>
+
+                                            </tbody>
+
+                                            <tbody class="mainTable3">
+                                                <tr>
+                                                    <th rowspan="2">LISENCE</th>
+                                                    <td class="date">2021.02</td>
+                                                    <td class="Eduname">정보처리기사(필기)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="date">2017.03</td>
+                                                    <td class="Eduname">컴퓨터활용능력 2급</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+
+
+                                    </div>
+                                </p>
+
+                                <div class="first">
+                                    <h2 style="font-size: 2.5rem;">🙍‍♂️ 안녕하세요! <span>저는 프론트 엔드 개발자에 지원합니다.</span></h2>
+                                    <br>
+                                    <ul style="margin-left: 25%; text-align: left; font-size: 1.5rem;">
+                                        <li>주어진 업무에 최선을 다해서 임할 것이며<br>
+                                            생각하고 고민해도 해결하기 힘들다면 주변동료분들께 조언을 구하겠습니다.</li>
+                                        <li>현재는 프론트엔드 분야를 공부하고 있으며<br>
+                                            React를 열심히 공부하고 있습니다.</li>
+                                        <li>항상 배우고 공부함으로써 어제보다 더 성장된 개발자가 되겠습니다.<br></li>
+                                    </ul>
+                                </div>
+<!-- 
+                                <div class="skill">
+                                    <div class="txtSKILL">SKILL</div>
+                                    <img src="images/html.png" class="html" alt="">
+                                    <img src="images/css.png" class="css" alt="">
+                                    <img src="images/sass1.png" class="sass" alt="">
+                                    <img src="images/js.png" class="js" alt="">
+                                </div> -->
+
+
+
+
+                            </div>
+                            <div class="footer">
+                                <div class="footer-text">
+                                    Copyright 2022. Kim Jeong Hwan all rights reseved.
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Mainly scripts -->
+                    <script src="../js/jquery-3.1.1.min.js"></script>
+                    <script src="../js/popper.min.js"></script>
+                    <script src="../js/bootstrap.js"></script>
+                    <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                    <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+                    <!-- Custom and plugin javascript -->
+                    <script src="../js/inspinia.js"></script>
+                    <script src="../js/plugins/pace/pace.min.js"></script>
+
+                    <script>
+                        $('body.canvas-menu .sidebar-collapse').slimScroll({
+                            height: '100%',
+                            railOpacity: 0.9
+                        });
+                    </script>
+
+                    <script src="../js/script.js"></script>
+
+
+                    <script>
+                        document.getElementById("modal_opne_btn").onclick = function() {
+                            document.getElementById("modal").style.display="block";
+                        }
+                       
+                        document.getElementById("modal_close_btn").onclick = function() {
+                            document.getElementById("modal").style.display="none";
+                        }   
+                    </script>
+
+</body>
+
+</html>
